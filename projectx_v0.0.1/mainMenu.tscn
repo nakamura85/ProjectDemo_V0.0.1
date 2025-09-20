@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://r3antjychlqb"]
+[gd_scene load_steps=7 format=3 uid="uid://r3antjychlqb"]
 
 [ext_resource type="Script" uid="uid://bepdc6tg46iie" path="res://button.gd" id="1_wut1r"]
+[ext_resource type="Script" uid="uid://dl5fdc0vtheh8" path="res://exitButton.gd" id="2_83s16"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l1xq8"]
 
@@ -77,5 +78,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_83s16")
 text = "Exit"
+script = ExtResource("2_83s16")
 
 [connection signal="pressed" from="BoxContainer/Button" to="BoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="BoxContainer/Button3" to="BoxContainer/Button3" method="_on_pressed"]
