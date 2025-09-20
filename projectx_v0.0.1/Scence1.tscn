@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqyp7tsaaexie"]
+
+[ext_resource type="Texture2D" uid="uid://b7jtj8jm8pbs8" path="res://Resources/1920x1080-bright-green-solid-color-background.jpg" id="1_256ka"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l36h0"]
+size = Vector2(1897.8499, 1067.8486)
+
+[node name="Scence1" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2006.0001, 1475)
+scale = Vector2(2.121875, 0.08888899)
+texture = ExtResource("1_256ka")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+position = Vector2(1.6494141, -27.675781)
+shape = SubResource("RectangleShape2D_l36h0")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1078.0
+offset_top = 652.0
+offset_right = 1351.0
+offset_bottom = 748.0
+theme_override_font_sizes/font_size = 70
+text = "Scence1"

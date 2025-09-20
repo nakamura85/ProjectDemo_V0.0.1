@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://bt5rnyna0ejnn"]
+[gd_scene load_steps=2 format=3 uid="uid://bt5rnyna0ejnn"]
+
+[ext_resource type="Script" uid="uid://b1g6e43fgvlkv" path="res://skipButton.gd" id="1_x2p0b"]
 
 [node name="TutorialMenu" type="Node2D"]
 
@@ -8,7 +10,20 @@ offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 1020.0
+offset_top = 651.0
+offset_right = 1703.0
+offset_bottom = 788.0
 theme_override_font_sizes/font_size = 100
 text = "Tutorial menu"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 2375.0
+offset_top = 35.0
+offset_right = 2504.0
+offset_bottom = 126.0
+theme_override_font_sizes/font_size = 60
+text = "Skip"
+script = ExtResource("1_x2p0b")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

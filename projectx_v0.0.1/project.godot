@@ -10,20 +10,14 @@ config_version=5
 
 [application]
 
-config/name="ProjectX_V0.0.1"
+config/name="ProjectX_V0.0.1 (4.4) _Copy"
 run/main_scene="uid://r3antjychlqb"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [dotnet]
 
 project/assembly_name="ProjectX_V0.0.1"
-
-[file_customization]
-
-folder_colors={
-"res://Resources/": "blue"
-}
 
 [rendering]
 
