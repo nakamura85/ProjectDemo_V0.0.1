@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bt5rnyna0ejnn"]
+
+[node name="TutorialMenu" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 100
+text = "Tutorial menu"

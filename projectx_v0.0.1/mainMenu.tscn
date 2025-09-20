@@ -1,4 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://r3antjychlqb"]
+[gd_scene load_steps=6 format=3 uid="uid://r3antjychlqb"]
+
+[ext_resource type="Script" uid="uid://bepdc6tg46iie" path="res://button.gd" id="1_wut1r"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l1xq8"]
 
@@ -62,6 +64,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_l1xq8")
 text = "Start"
+script = ExtResource("1_wut1r")
 
 [node name="Button2" type="Button" parent="BoxContainer"]
 layout_mode = 2
@@ -74,3 +77,5 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_83s16")
 text = "Exit"
+
+[connection signal="pressed" from="BoxContainer/Button" to="BoxContainer/Button" method="_on_pressed"]
