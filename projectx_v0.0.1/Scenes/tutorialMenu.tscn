@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://deqyjfaxwvrmh"]
 
-[ext_resource type="Script" uid="uid://bsabs0i8cbg5b" path="res://skipBtn.gd" id="1_x2p0b"]
+[ext_resource type="Script" uid="uid://bsabs0i8cbg5b" path="res://Script/skipBtn.gd" id="1_t5w5f"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x6vxi"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -36,6 +36,6 @@ offset_bottom = 65.0
 grow_horizontal = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_x2p0b")
 text = "Skip"
-script = ExtResource("1_x2p0b")
+script = ExtResource("1_t5w5f")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
