@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ProjectX_V0.0.1"
-run/main_scene="uid://r3antjychlqb"
+run/main_scene="uid://eeu43ccekkpj"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
