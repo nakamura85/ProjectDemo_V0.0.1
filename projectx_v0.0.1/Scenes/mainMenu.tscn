@@ -1,7 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://eeu43ccekkpj"]
+[gd_scene load_steps=11 format=3 uid="uid://eeu43ccekkpj"]
 
 [ext_resource type="Script" uid="uid://bp5aect66ixeq" path="res://Script/main_menu.gd" id="1_dva2s"]
 [ext_resource type="Script" uid="uid://b5eehmttls5oj" path="res://Script/startBtn.gd" id="2_401c2"]
+[ext_resource type="Script" uid="uid://bytsoc76fvm1b" path="res://Script/exitBtn.gd" id="3_b7htb"]
+[ext_resource type="Script" uid="uid://bii2x5s5g0eq0" path="res://Script/optionBtn.gd" id="3_yl13b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_83s16"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -133,11 +135,15 @@ script = ExtResource("2_401c2")
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_w7d22")
 text = "OPTIONS"
+script = ExtResource("3_yl13b")
 
 [node name="Button3" type="Button" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_wked4")
 text = "EXIT"
+script = ExtResource("3_b7htb")
 
 [connection signal="ready" from="." to="." method="_on_ready"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Button" to="PanelContainer/VBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button2" to="PanelContainer/VBoxContainer/Button2" method="_on_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button3" to="PanelContainer/VBoxContainer/Button3" method="_on_pressed"]
